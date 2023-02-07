@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pagination.css" />
+    <title>Pagination Component</title>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="chevron-left" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 19l-7-7 7-7"
+        />
+      </symbol>
+      <symbol id="chevron-right" fill="none" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        />
+      </symbol>
+    </svg>
+
+    <div class="pagination">
+      <button class="back-btn">
+        <svg class="btn-icon">
+          <use xlink:href="#chevron-left" />
+        </svg>
+      </button>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a class="current-page" href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <span class="ellipsis">&hellip;</span>
+      <a href="#">23</a>
+      <button class="fwd-btn">
+        <svg class="btn-icon">
+          <use xlink:href="#chevron-right" />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
